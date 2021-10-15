@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+var city=['서울','대구','대전','부산']
+//join:배열의 중간에 값 추가
+var joindata1=city.join('안녕')
+document.write(joindata1)
+
+//push:제일 뒤에 추가
+city.push('강원도','인천')
+document.write("<br>"+city+"<br>")
+//pop:제일 뒤의 값 삭제
+city.pop()
+document.write(city+"<br>")
+//unshift:제일 앞쪽에 추가
+city.unshift('인천송도')
+document.write("city"+"<br>")
+//shift:제일 앞쪽값 삭제
+city.shift();
+document.write(city+"<br>")
+
+for(i=0;i<city.length;i++)
+	document.write(city[i]+"<hr>")
+	
+	function forTest(item, index){
+	document.write(index+item+"실행<br>")
+}
+	city.forEach(forTest)
+	
+	//city에 저장되어있는값을 테이블로 만들기
+	html="<table border='1'>"
+	function tebleTest(item,index){
+		html+="<tr>"
+		html+="<td>"+item+"</td>"
+		html+="</tr>"
+	}
+	city.forEach(tableTest)
+	html+="</table>"
+	document.write(html)
+	
+	DBdata=[
+		{'id':111,'name':'홍길동11','addr':'산골짜기11'},
+		{'id':111,'name':'홍길동22','addr':'산골짜기22'},
+		{'id':111,'name':'홍길동33','addr':'산골짜기33'}
+	]
+	
+function quizTable(item,index){
+		html+="<tr>"
+		html+="<td>"+index+""
+	}
+	
+	city.forEach()
+	html+="</table>"
+</script>
+
+
+<div>
+	<h3>회원들의 정보</h3>
+	<div id='member'>
+	<table border="1">
+	<tr>
+	<td>DBdata</td>
+	</tr>
+	</table>
+	</div>
+</div>
+</body>
+</html>

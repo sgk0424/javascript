@@ -1,0 +1,58 @@
+* { margin: 0; }
+.wrap { width: 1040px; margin: auto;}
+a.logo img{ width: 100px; height: 50px; margin-top: 15px; }
+nav { position: fixed; width: 1040px; height: 80px; background-color: black;}
+nav ul { list-style: none; display: flex; margin-top: 20px; }
+nav ul li { margin: 0 3px; padding: 8px 15px; }
+nav ul li a { text-decoration: none; color: #fff; }
+nav ul li a:hover {
+	color: orange; padding-bottom: 3px; border-bottom: 2px solid orange;
+	transition:all 0.25s;
+}
+.nav-wrap{ display: flex; justify-content: space-between; }
+
+.back-image1{
+	/*background-image: url('../images/car01.png');*/
+	background-size: 1040px 1080px;
+}
+.back-image2{
+	background-image: url('../images/car02.png');
+	background-size: 1040px 1080px;
+}
+.back-image3{
+	background-image: url('../images/car03.png');
+	background-size: 1040px 1080px;
+}
+.back-image4{
+	background-image: url('../images/quiz.png');
+	background-size: 1040px 1080px;
+}
+.full-page{ height: 1080px; }
+
+.title { padding: 100px 0 0 200px; color: white; 
+		text-shadow: 10px 10px 15px purple ; font-size: 70px; }
+
+.inner{
+	margin: auto; width: 700px; height: 500px; color: black;
+	background-color: rgba(255, 177, 177, .5);
+}
+ form {margin: auto; width: 70%; border: 1px solid black;
+				padding: 20px;  border-radius: 15px;}
+	 form label {
+		vertical-align: top;
+		width:120px; display: inline-block; padding:7px 0; }
+	 form input { 
+		 border-radius: 5px; height: 25px; border: 1px solid gray;
+		 width: 50%;
+	}
+	 form textarea{
+	 	border-radius: 5px; height: 100px;  width: 70%;
+	 	margin-top: 7px;
+	}
+	 form button{
+		margin-left: 120px; padding: 10px 20px;  border-radius: 5px;
+		background-color: aqua; color: blue;
+	}
+	 form button:active {
+	 	border-radius: 15px; background-color: blue;
+	}
