@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".add").click(function(){
+		$("h1, p,div").addClass("blue")
+		//document.getElementById().className=('blue')
+	})
+	$("button.remove").click(function(){
+		$("h1, p").removeClass("blue")
+	})
+})
+function test(){
+	$("h1,p").toggleClass('border')
+}
+</script>
+<style>
+.border{border:1px soild black;}
+.blue{color:blue;}
+</style>
+</head>
+<body>
+<h1 id='test'>test</h1>
+<p>test</p>
+<div>test</div>
+<button class="add">추가</button>
+<button class="remove">삭제</button>
+<button class="toogle" onclick="test()">toggle</button>
+</body>
+</html>
